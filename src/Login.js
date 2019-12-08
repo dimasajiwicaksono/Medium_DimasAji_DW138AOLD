@@ -15,6 +15,7 @@ function LogIn(props) {
         centered
         >
         
+        <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
         <div className = "containerLog">
         <div className= "text">
