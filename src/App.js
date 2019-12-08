@@ -5,6 +5,8 @@ import {ButtonToolbar} from 'react-bootstrap';
 import {Form} from 'react-bootstrap';
 import './App.css';
 
+
+
 function MyModal(props) {
     return (
     <Modal
@@ -55,20 +57,21 @@ function MyModal(props) {
     );
 }
 
-function App() {
+function App () {
+
     const [modalShow, setModalShow] = React.useState(false);
 
     return (
     <ButtonToolbar>
         <Button variant="success" onClick={() => setModalShow(true)}>
-        Sign Up
+        Registration
         </Button>
 
         <MyModal
         show={modalShow}
         onHide={() => setModalShow(false)}
         dialogClassName="lg"
-            aria-labelledby="example-custom-modal-styling-title"
+        aria-labelledby="example-custom-modal-styling-title"
         />
     </ButtonToolbar>
     );

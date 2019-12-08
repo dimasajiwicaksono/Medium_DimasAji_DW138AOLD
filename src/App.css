@@ -49,8 +49,31 @@
 
 }
 
+.form-groupLog {
+  padding: 20px;
+  margin-left: 200px;
+  margin-right:200px;
+  outline: none;
+  border-radius: 10px;
+
+}
+
+.form-groupLog input [placeholder] {
+  text-align: center;
+}
+
+
 .container {
   margin-top: 10px;
   padding-top: 30px;
   top: 0%;
+}
+
+
+.containerLog {
+  text-align: center;
+  padding-bottom:0px;
+  width: auto;
+
+
 }
