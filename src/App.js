@@ -31,13 +31,16 @@ function MyModal(props) {
         
         <Form>
         <div className="form-group">
-                    <input type="username" className="form-control" placeholder="Your Username" />
+            <label>Your Username</label>
+                    <input type="username" className="form-control" />
                 </div>
                 <div className="form-group">
-                    <input type="password" className="form-control" placeholder="Your Password" />
+                    <label>Your Password </label>
+                    <input type="password" className="form-control" />
                 </div>
                 <div className="form-group">
-                    <input type="email" className="form-control" placeholder="Your Email" />
+                    <label>Your Email</label>
+                    <input type="email" className="form-control" />
                 </div>
                 <div className="form-group" >
                     <Button variant ="dark" type="Submit"color="black" textAlign="center">Registration</Button>
@@ -62,7 +65,7 @@ function App () {
     const [modalShow, setModalShow] = React.useState(false);
 
     return (
-    <ButtonToolbar>
+    <ButtonToolbar className="btn-registration">
         <Button variant="success" onClick={() => setModalShow(true)}>
         Registration
         </Button>

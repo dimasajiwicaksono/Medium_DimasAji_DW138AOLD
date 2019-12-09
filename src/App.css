@@ -50,7 +50,7 @@
 }
 
 .form-groupLog {
-  padding: 20px;
+  padding: 10px;
   margin-left: 200px;
   margin-right:200px;
   outline: none;
@@ -70,10 +70,29 @@
 }
 
 
-.containerLog {
+@componets .containerLog {
   text-align: center;
   padding-bottom:0px;
   width: auto;
 
+}
 
+.topNav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+  font-size: 14px;
+  margin-left: 15px;
+  overflow: hidden;
+}
+
+
+.login {
+    margin-left:1000px;
+    margin-top: 10px;
+}
+
+.btn-registration {
+  margin-left: 950px;
 }

@@ -6,6 +6,7 @@ import {Form} from 'react-bootstrap';
 import './App.css';
 
 
+
 function LogIn(props) {
     return (
     <Modal
@@ -20,22 +21,25 @@ function LogIn(props) {
         <div className = "containerLog">
         <div className= "text">
         <p style={{fontSize:"30px", textAlign:"center",fontFamily:"Times New Roman"}}><b>Sign in with email </b></p>
-        <p style={{textAlign:"center", color:"grey", fontSize:"12px"}}>
+        <p style={{textAlign:"center", color:"grey", fontSize:"20px"}}>
             Enter the email address with your account,<br/>
             and we'll send a magic link to your inbox</p>
         </div>
         
         <Form>
         <div className="form-groupLog">
-            <input type="username" className="form-control" placeholder="Your Username"required/>
+            <label>Your Username</label>
+            <input type="username" className="form-control"required/>
         </div>
         <div className="form-groupLog">
-            <input type="password" className="form-control" placeholder="Your Password" required/>
+            <label>Your Password</label>
+            <input type="password" className="form-control"required/>
         </div>
         <div className="form-groupLog" >
-            <Button variant ="dark" type="Submit"color="black" textAlign="center">Continue</Button>
+            <Button variant ="dark" type="Submit"color="black" textAlign="center" primary={true}
+                        onclick={(event) => this.App(event)}>Continue</Button>
             </div>
-        <br/><br/><br></br>
+        <br/><br/>
             <p style={{textAlign:"center"}}> <b><font color="green"><a href ="#">All Sign in options</a></font></b></p>
                 
         </Form>
@@ -51,7 +55,7 @@ function App () {
     const [modalShow, setModalShow] = React.useState(false);
 
     return (
-    <ButtonToolbar>
+    <ButtonToolbar className="login">
         <Button variant="success" onClick={() => setModalShow(true)}>
         Login
         </Button>
