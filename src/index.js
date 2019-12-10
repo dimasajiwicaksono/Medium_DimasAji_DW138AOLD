@@ -5,14 +5,16 @@ import '@material-ui/icons';
 
 import './index.css';
 //import App from './App';
-//import Login from './Login';
-import Home from './Home';
+import Login from './Login';
+//import Home from './Home';
+//import Header from'./components/Header';
 import * as serviceWorker from './serviceWorker';
 
 
-//ReactDOM.render(<Login />, document.getElementById('Login'));
+ReactDOM.render(<Login />, document.getElementById('Login'));
 //ReactDOM.render(<App />, document.getElementById('Register'));
-ReactDOM.render(<Home/>, document.getElementById('Home'));
+//ReactDOM.render(<Home/>, document.getElementById('Home'));
+//ReactDOM.render(<Header />, document.getElementById('Header'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

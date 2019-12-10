@@ -2,8 +2,8 @@ import React from 'react';
 import {Button} from 'react-bootstrap';
 import {Modal} from 'react-bootstrap';
 import {ButtonToolbar} from 'react-bootstrap';
-import {Form} from 'react-bootstrap';
 import './App.css';
+import FormData from './FormData';
 
 
 
@@ -25,24 +25,9 @@ function LogIn(props) {
             Enter the email address with your account,<br/>
             and we'll send a magic link to your inbox</p>
         </div>
-        
-        <Form>
-        <div className="form-groupLog">
-            <label>Your Username</label>
-            <input type="username" className="form-control"required/>
-        </div>
-        <div className="form-groupLog">
-            <label>Your Password</label>
-            <input type="password" className="form-control"required/>
-        </div>
-        <div className="form-groupLog" >
-            <Button variant ="dark" type="Submit"color="black" textAlign="center" primary={true}
-                        onclick={(event) => this.App(event)}>Continue</Button>
-            </div>
-        <br/><br/>
-            <p style={{textAlign:"center"}}> <b><font color="green"><a href ="#">All Sign in options</a></font></b></p>
-                
-        </Form>
+            {/* import formdata*/}
+            <FormData />
+
         </div>
         </Modal.Body>
     </Modal>
