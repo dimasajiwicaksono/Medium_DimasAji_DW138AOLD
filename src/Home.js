@@ -115,18 +115,51 @@ const articleMain = [
 
 
 
-const categoryMenus = [
-  {id: 1, name : "HOME" }, 
-  {id: 2, name : "ONEZERO"}, 
-  {id: 3, name : "ELEMENTAL"},
-  {id: 4, name : " GEN"},
-  {id: 5, name : " ZORA"},
-  {id: 6, name : " FORGE"},
-  {id: 7, name : " HUMAN PARTS"},
-  {id: 8, name : " LEVER"},
-  {id: 9, name : " HEATED"},
-  {id: 10, name : " MODUS"}
-]
+// const categoryMenus = [
+//   {id: 1, name : "HOME" }, 
+//   {id: 2, name : "ONEZERO"}, 
+//   {id: 3, name : "ELEMENTAL"},
+//   {id: 4, name : " GEN"},
+//   {id: 5, name : " ZORA"},
+//   {id: 6, name : " FORGE"},
+//   {id: 7, name : " HUMAN PARTS"},
+//   {id: 8, name : " LEVER"},
+//   {id: 9, name : " HEATED"},
+//   {id: 10, name : " MODUS"}
+// ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -142,12 +175,12 @@ class Home extends Component {
             <Navbar>
               <Header />
             </Navbar>
-            <Col>
-            <Navbar bg="light" variant="dark">
-              {categoryMenus.map (item =>
-                <Category
-                  name= {item.name} /> )}
-            </Navbar>
+            <Col sticky="Top" style={{paddingTop:0}}>
+            {/* <Navbar bg="light" variant="dark"> */}
+              {/* {categoryMenus.map (item => */}
+                <Category />
+                  {/* // name= {item.name} /> )} */}
+            {/* </Navbar> */}
             </Col>
         </Container>
 
