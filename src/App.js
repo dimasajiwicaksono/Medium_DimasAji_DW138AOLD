@@ -67,7 +67,7 @@ function App () {
     return (
     <ButtonToolbar className="btn-registration">
         <Button variant="success" onClick={() => setModalShow(true)}>
-        Registration
+        Get Started
         </Button>
 
         <MyModal
