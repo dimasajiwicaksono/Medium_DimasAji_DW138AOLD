@@ -4,6 +4,7 @@ import {Modal} from 'react-bootstrap';
 import {ButtonToolbar} from 'react-bootstrap';
 import {Form} from 'react-bootstrap';
 import './App.css';
+import {Link } from 'react-router-dom';
 
 
 
@@ -48,7 +49,7 @@ function MyModal(props) {
                 <br></br>
 
     
-                <p style={{textAlign:"center"}}> <b>Already have an account ? <font color="green"><a href ="#">Sign In</a></font></b></p>
+                <p style={{textAlign:"center"}}> <b>Already have an account ? <font color="green">Sign In</font></b></p>
                 <p style={{textAlign:"center",fontSize:"14px"}}> To make medium work, we log user data and share it <br/>
                     with service providers. Click "Sign Up" above to accept <br/>
                     Medium's Term of Service & Privacy Policy. </p> 

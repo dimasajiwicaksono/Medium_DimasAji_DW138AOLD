@@ -85,28 +85,6 @@ export default class CategoryPage extends Component {
                         /> )}
                         
 
-
-                    {/* <Col lg={8} style={{ paddingRight: "0px" }}>
-                        <Card className="bg-light text-dark">
-                            <Card.Img src="https://miro.medium.com/max/1958/1*KrWzdaB7HuC1mQvZnHmIDg.png" alt="Card image" style={{ width: "100%", height: "350px", objectFit: "Cover" }} />
-
-                        </Card>
-                    </Col>
-                    <Col style={{ paddingLeft: "0px" }}>
-                        <Card className="text-center" bg="primary" text="white" style={{ height: "350px" }}>
-                            <div className="cardText" style={{ margin: "20px" }}>
-                                <Card.Text style={{ fontFamily: "", fontSize: "30px" }}>
-                                    Architects Are Playing With the Future of Design in Video Games.</Card.Text>
-                                <Card.Text style={{ fontSize: "15px" }}>
-                                    Game worlds can be blueprints for the real world, liberating spaces where rules can be reinvented
-                                and the invisible made visible</Card.Text>
-                                <Card.Text style={{ color: "Yellow", marginBottom: "0px" }}>
-                                    <b>Thomas McMullan </b></Card.Text>
-                                <Card.Text>
-                                    Des 9 . 6 min read</Card.Text>
-                            </div>
-                        </Card>
-                    </Col> */}
                 </Row>
             {/*------------------------------------------ containEnd ----------------------------------------*/}
 
@@ -150,19 +128,5 @@ export default class CategoryPage extends Component {
     }
 
 }
-
-
-
-// blockquote className = "blockquote mb-0 card-body" >
-//     <p>
-//         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-//         erat a ante.
-//     </p>
-//     <footer className="blockquote-footer">
-//         <small className="text-muted">
-//             Someone famous in <cite title="Source Title">Source Title</cite>
-//         </small>
-//     </footer>
-//     </blockquote >
 
 

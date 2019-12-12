@@ -15,7 +15,7 @@ export default class Header extends Component {
                 <Container style={{paddingTop:"0px", marginTop:"0px"}}>
                     <Navbar style={{height:"76px"}} bg = "light" variant ="dark">
                         <Navbar style={{marginRight:"600px"}} className="medium">
-                            <Navbar.Brand href="#">
+                            <Navbar.Brand href="/Home">
                                 <h1 style={{
                                     fontSize:"30px",
                                     color:"Black",

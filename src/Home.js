@@ -48,20 +48,22 @@ const articleBig = [
     title: "Tutorial: how to deploy a production React app to Heroku",
     subTitle:"Create-react-app and Heroku are great tools for building highly performant apps, .....",
     author : "Jeremy Gothlifield ",
-    info: "Des 10. 6 min read"
+    info: "Des 10. 6 min read",
+    url:'https://medium.com/jeremy-gottfrieds-tech-blog/tutorial-how-to-deploy-a-production-react-app-to-heroku-c4831dfcfa08'
   }
 ]
 
 
 const articleMain = [
   {
-    img :'https://miro.medium.com/max/808/1*KIMq2ISjROvOFiJBfGYmkg.png',
+    img :'https://miro.medium.com/max/2000/1*-T8oo_JoKkMxfnPKLt_Ciw.jpeg',
     id: 1,
     superTitle: "BASED ON YOUR READING HISTORY",
-    title: "15 Stunning Data Visualizations (And What You Can Learn From Them)",
-    subTitle:"We’re drowning in data. Everyday, 2.5 quintillion bytes of data are created.",
+    title: "If You Only Read A Few Books in 2018, Read These",
+    subTitle:"If you’d liked to be jerked around less,provoked less, and more productive and inwardly focused,",
     author : "Marcellio in Towards Science ",
-    info: "Des 10. 6 min read"
+    info: "Des 10. 6 min read",
+    url :"/ArticleDetail"
   },
   {
     id: 2,
@@ -130,43 +132,6 @@ const articleMain = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Home extends Component {
   render() {
     return (
@@ -195,7 +160,8 @@ class Home extends Component {
                   title={item.title}
                   subTitle={item.subTitle}
                   author={item.author}
-                  info={item.info} />
+                  info={item.info}
+                  url={item.url} />
               )}
             </Col>
             <Col className="center">
@@ -261,7 +227,8 @@ class Home extends Component {
                   title={item.title}
                   subTitle={item.subTitle}
                   author={item.author}
-                  info={item.info} />
+                  info={item.info}
+                  url={item.url}/>
               )}
             </Col>
           </Row>

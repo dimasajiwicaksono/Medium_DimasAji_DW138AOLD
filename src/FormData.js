@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Form, Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 
 export default class FormData extends Component {
@@ -9,23 +10,23 @@ export default class FormData extends Component {
     constructor(props) {
         super(props);
 
-        this.onChangeName = this.onChangeName.bind(this);
         this.onChangeEmail = this.onChangeEmail.bind(this);
+        this.onChangeName = this.onChangeName.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
-            name: '',
             email: '',
+            password: '',
         }
     }
 
     // Form Events
-    onChangeName(e) {
-        this.setState({ name: e.target.value })
-    }
-
     onChangeEmail(e) {
         this.setState({ email: e.target.value })
+    }
+
+    onChangeName(e) {
+        this.setState({ password: e.target.value })
     }
 
 
@@ -33,8 +34,8 @@ export default class FormData extends Component {
         e.preventDefault()
 
         this.setState({
-            name: '',
             email: '',
+            password: '',
         })
     }
 
@@ -44,13 +45,13 @@ export default class FormData extends Component {
 
         if (localStorage.getItem('user')) {
             this.setState({
-                name: this.userData.name,
                 email: this.userData.email,
+                password: this.userData.password,
             })
         } else {
             this.setState({
-                name: '',
                 email: '',
+                password: '',
             })
         }
     }
@@ -65,14 +66,14 @@ export default class FormData extends Component {
             <div className="container">
                 <Form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label>Your Name</label>
-                        <input type="text" className="form-control" value={this.state.name} onChange={this.onChangeName} />
+                        <label>Your Email</label>
+                        <input type="email" className="form-control" value={this.state.email} onChange={this.onChangeEmail} />
                     </div>
                     <div className="form-group">
                         <label>Your Password</label>
-                        <input type="email" className="form-control" value={this.state.email} onChange={this.onChangeEmail} />
+                        <input type="password" className="form-control" value={this.state.password} onChange={this.onChangeName} />
                     </div>
-                    <Button style={{marginLeft:"320px"}} variant="dark" type="submit" className="btn-continue">Continue</Button>
+                    <Button style={{marginLeft:"320px", color:"white"}} variant="dark" type="submit" className="btn-continue"><Link to ="/Home" style={{color:"white"}}>Continue</Link></Button>
                     <br/><br/>
                     <p style={{color:"green", textAlign:"center"}}> <b><a href="#">All sign in options</a></b> </p>
                 </Form>

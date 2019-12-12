@@ -19,18 +19,18 @@ import './App.css';
 
 // list of items
 const list = [
-    { id: 1, name: "HOME" },
-    { id: 2, name: "ONEZERO" },
-    { id: 3, name: "ELEMENTAL" },
-    { id: 4, name: " GEN" },
-    { id: 5, name: " ZORA" },
-    { id: 6, name: " FORGE" },
-    { id: 7, name: " HUMAN PARTS" },
-    { id: 8, name: " LEVER" },
-    { id: 9, name: " HEATED" },
-    { id: 10, name: " MODUS" },
-    { id: 11, name: " CEK" },
-    { id: 12, name: " MORE" }
+    { name: "HOME", url:'/Home' },
+    { name: "ONEZERO", url:'/CategoryPage' },
+    { name: "ELEMENTAL", url:'/' },
+    { name: " GEN", url:'/' },
+    { name: " ZORA", url:'/' },
+    { name: " FORGE",url:'/' },
+    { name: " HUMAN PARTS", url:'/' },
+    { name: " LEVER", url:'/' },
+    { name: " HEATED", url:'/' },
+    { name: " MODUS", url:'/' },
+    { name: " CEK", url:'/' },
+    { name: " MORE", url:'/' }
 ]
 
 
