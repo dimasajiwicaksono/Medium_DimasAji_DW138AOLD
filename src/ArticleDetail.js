@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import MissionHeader from './components/MissionHeader';
-import {Container, Navbar} from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import './App.css';
 import Follow from './components/Follow';
-
+import FooterArticle from './components/FooterArticle';
+import FooterArticleBanner from './components/FooterArticleBanner';
 
 
 export default class ArticleDetail extends Component {
@@ -15,11 +16,21 @@ export default class ArticleDetail extends Component {
                     <Header />
                     <MissionHeader />
                 </div>
-                <div> 
+                <div>
                     <Follow />
                 </div>
+                <div className="fluid">
+                    <Row classNAme="justify-content-center">
+                        <Col xs md={4}> <FooterArticle /></Col>
+                        <Col xs md={4}> <FooterArticle /></Col>
+                        <Col xs md={4}> <FooterArticle /></Col>
+                    </Row>
+                </div>
+                <div className="container-fluid">
+                    <FooterArticleBanner />
+
+                </div>
             </Container>
-            
         )
     }
 }
