@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
 import {Button, OverlayTrigger, Container, Row, Col, Image} from 'react-bootstrap';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
-import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import {Link} from 'react-router-dom';
 import Comment from './../components/Comment';
 
@@ -92,57 +88,6 @@ export default class Follow extends Component {
 
         </Container> 
 
-
-
-        //     <Container style={{justifyContent:"center"}}>
-        //         <div className="FollowComponent">
-        //             <div className="button">
-        //                 <span><Button variant="light">Books</Button> </span>
-        //                 <span><Button variant="light">self improvement</Button> </span>
-        //                 <span><Button variant="light">Productivity</Button> </span>
-        //                 <span><Button variant="light">Life</Button> </span>
-        //                 <span><Button variant="light">Life Lesson</Button> </span>
-        //             </div>
-        //             <div className="icon"></div>
-        //                 <div className="claps">
-        //                     <div className="iconClap">
-        //                         ini icon
-        //                     </div>
-        //                     <div className="countClap">
-        //                         +64
-        //                     </div>
-        //                 </div>
-                                
-        //                 <div className="iconSosMed" style={{justifyContent:"right"}}>
-        //                     <span><a href="#"> <TwitterIcon /> </a> </span>
-        //                     <span> <FacebookIcon /> </span>
-        //                     <span> <BookmarkBorderIcon /> </span>
-        //                     <span> <MoreHorizIcon /> </span>
-        //                 </div>
-
-        //                 <hr style={{borderLine:"2px"}}/>
-
-        //             <div className="follow">
-        //                 <span><img src ="https://miro.medium.com/fit/c/160/160/0*oxw8NBp_Td0n3l4_.png" style={{borderRadius:"50%", width:"100px", height:"100px"}}/></span>
-        //                 <div className="followicon">
-        //                     <div><p>WRITTEN BY</p></div>
-        //                     <span>
-        //                         <p>RYAN HOLIDAY</p>
-        //                         <Button variant="outline-success">Follow </Button>
-        //                     </span> 
-                            
-        //                     <div><p>Bestselling author of ‘Conspiracy,’ ‘Ego is the Enemy’ & ‘The Obstacle Is The Way’ http://amzn.to/24qKRWR </p></div>
-        //                 </div>
-                        
-        //             </div> 
-
-        //             <hr />
-
-        //             <div className="seeRespon"></div>
-        //                 <Button variant="outline-success" size="lg">See responses (216) </Button>
-
-        //         </div>
-        // </Container>
 
         )
     }
