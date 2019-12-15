@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Container, Button} from 'react-bootstrap';
-import Header from './Header'
+import Header from './Header';
 
 export default class Story extends Component {
     render() {
