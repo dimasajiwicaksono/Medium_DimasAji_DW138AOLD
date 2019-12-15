@@ -26,16 +26,16 @@ export default class DropDownProfile extends Component {
                         </Row>
 
                     </Dropdown.Item >
-                    <Dropdown.Item as="button" style={{textDecoration:"none"}}> Become Member</Dropdown.Item>
+                    <Link to ="#"><Dropdown.Item as="button" style={{textDecoration:"none"}}> Become Member</Dropdown.Item></Link>
                     <Dropdown.Divider />
-                    <Dropdown.Item as="button" style={{textDecoration:"none"}}> New Story</Dropdown.Item>
+                    <Link to="#"><Dropdown.Item as="button" style={{textDecoration:"none"}}> New Story</Dropdown.Item></Link>
                     <Link to ="./story" style={{textDecoration:"none"}}> <Dropdown.Item as="button"> Stories</Dropdown.Item> </Link>
-                    <Dropdown.Item as="button"style={{textDecoration:"none"}}>Stat</Dropdown.Item>
+                    <Link to="./stat"><Dropdown.Item as="button"style={{textDecoration:"none"}}>Stat</Dropdown.Item></Link>
                     <Dropdown.Divider />
                     <Link to='/bookmark'style={{textDecoration:"none"}}> <Dropdown.Item as="button"> Bookmarks</Dropdown.Item></Link>
-                    <Dropdown.Item as="button"style={{textDecoration:"none"}}> Profile</Dropdown.Item>
-                    <Dropdown.Item as="button"style={{textDecoration:"none"}}>Setting</Dropdown.Item>
-                    <Dropdown.Item as="button"style={{textDecoration:"none"}}>Help</Dropdown.Item>
+                    <Link to="./stat"><Dropdown.Item as="button"style={{textDecoration:"none"}}> Profile</Dropdown.Item></Link>
+                    <Link to="./stat"><Dropdown.Item as="button"style={{textDecoration:"none"}}>Setting</Dropdown.Item></Link>
+                    <Link to="./stat"><Dropdown.Item as="button"style={{textDecoration:"none"}}>Help</Dropdown.Item></Link>
                     <Link to='/login'> <Dropdown.Item as="button"style={{textDecoration:"none"}}>Sign Out</Dropdown.Item></Link>
                 </div>
             </DropdownButton>
