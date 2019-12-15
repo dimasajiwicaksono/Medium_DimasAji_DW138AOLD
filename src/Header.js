@@ -3,6 +3,7 @@ import {Container, Nav, Navbar, Button, Image} from 'react-bootstrap';
 import { ReactComponent as Icon} from './magnifying-glass.svg';
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 import './App.css';
+import Drop from './components/DropDownProfile';
 
 
 
@@ -27,7 +28,7 @@ export default class Header extends Component {
                                 </h1>
                             </Navbar.Brand>
                         </Navbar>
-                            
+                        <Drop />
                         < Navbar clasName="icon" className="icon" inline>
                             <div className="icon-search">
                                 <span><Icon style={{width:"50%",height:"50%", }} /></span>

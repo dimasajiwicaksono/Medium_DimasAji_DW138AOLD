@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {Container, Row, Col, Card, Form} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBookmark, faAngleDown, faHandPaper} from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
+// import Bookmark from './Bookmark';
 // import Clap from './clapping.png';
 
 
@@ -17,7 +19,6 @@ export default class CommentBox extends Component {
                             <Form.Control as="textarea" placeholder="Write responses..." />
                         </Form.Group>
                     </Form>
-                               
                 <div className="container-comment" style={{ flexDirection: "column", display: "flex", alignItems: "center", marginBottom:"40px" }}>
                     <Card variant="light" text="dark">
                         <Card.Body style={{ width: "750px" }}>
@@ -40,7 +41,7 @@ export default class CommentBox extends Component {
                             </div>
                                 <p> 24 </p>
                             <div className="col-10 icon" style={{textAlign:"end"}}>
-                                <FontAwesomeIcon icon={faBookmark} style={{marginRight:"10px"}}/>
+                                <Link to='./Bookmark'><FontAwesomeIcon icon={faBookmark} style={{marginRight:"10px"}}/></Link>  
                                 <FontAwesomeIcon icon={faAngleDown} />
                             </div>
                         </div>

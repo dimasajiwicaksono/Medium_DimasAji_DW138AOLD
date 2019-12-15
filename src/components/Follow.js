@@ -31,7 +31,6 @@ export default class Follow extends Component {
                                 <Col className="c" >
                                 <p style={{marginBottom:0}}> WRITTEN BY </p>
                                     <Row className="d">
-                                         
                                         <Col xs={8} className="e" style={{width:"200px", paddingRight:"0px"}}>
                                         <div className="followButton" >
                                             <p style={{fontSize:"20px", marginBottom:0}}><strong>Ryan Holliday</strong></p>
@@ -48,7 +47,7 @@ export default class Follow extends Component {
                                 </Col>
                             </Row>
                         </Col>
-                     </Row>
+                    </Row>
                 </div>
             </div>
             
