@@ -4,6 +4,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import {Link} from 'react-router-dom';
+import Comment from './../components/Comment';
 
 
 export default class Follow extends Component {
@@ -85,7 +87,7 @@ export default class Follow extends Component {
             <hr />
 
         <div style={{paddingLeft:"350px", paddingBottom:"100px"}}>
-            <Button variant="outline-success" style={{width:"500px"}}> See responses (216) </Button>
+           <Link to="/Comment"> <Button variant="outline-success" style={{width:"500px"}}> See responses (2)</Button> </Link>
         </div>
 
 

@@ -63,7 +63,7 @@ const articleMain = [
     subTitle:"If you’d liked to be jerked around less,provoked less, and more productive and inwardly focused,",
     author : "Marcellio in Towards Science ",
     info: "Des 10. 6 min read",
-    url :"/ArticleDetail"
+    url :"/article_detail"
   },
   {
     id: 2,
