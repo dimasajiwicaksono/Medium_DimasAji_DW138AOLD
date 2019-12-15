@@ -22,7 +22,7 @@ export default class FooterArticle extends Component {
                         <img src="https://miro.medium.com/max/4195/1*cWrckQhDDGxKiwpb6YtPtg.jpeg" style={{ width: "40px", height: "40px", borderRadius: "50%" }} />
                     </Col>
                     <Col md={8} style={{ fontSize: "1em", padding: "0px" }}>
-                        <p style={{ marginBottom: "0px" }}>Srinivas Rao in Mission.org</p>
+                        <p style={{ marginBottom: "0px" }}>Dimas Aji Wickaono</p>
                         <p>Jan 24, 2018 . 4 min read</p>
                     </Col>
                     <Col md={2} style={{ marginTop: "10px" }}>

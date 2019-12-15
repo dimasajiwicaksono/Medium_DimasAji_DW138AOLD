@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import {Col,Row} from 'react-bootstrap';
 
-
-
-
 export default class FooterArticleBanner extends Component {
     render () {
         return (
@@ -37,9 +34,6 @@ export default class FooterArticleBanner extends Component {
                     </Col>
                 </Row>
             </div>
-
-
-
         )
     }
 }
