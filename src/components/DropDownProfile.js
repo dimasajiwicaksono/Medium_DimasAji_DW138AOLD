@@ -28,7 +28,7 @@ export default class DropDownProfile extends Component {
                     </Dropdown.Item >
                     <Link to ="#"><Dropdown.Item as="button" style={{textDecoration:"none"}}> Become Member</Dropdown.Item></Link>
                     <Dropdown.Divider />
-                    <Link to="#"><Dropdown.Item as="button" style={{textDecoration:"none"}}> New Story</Dropdown.Item></Link>
+                    <Link to="/new_story"><Dropdown.Item as="button" style={{textDecoration:"none"}}> New Story</Dropdown.Item></Link>
                     <Link to ="./story" style={{textDecoration:"none"}}> <Dropdown.Item as="button"> Stories</Dropdown.Item> </Link>
                     <Link to="./stat"><Dropdown.Item as="button"style={{textDecoration:"none"}}>Stat</Dropdown.Item></Link>
                     <Dropdown.Divider />
