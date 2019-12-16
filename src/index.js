@@ -16,6 +16,8 @@ import Comment from './components/Comment';
 import Story from './StoryNav';
 import StoryNavDraft from './StoryNavDraft';
 import NewStory from './NewStory';
+import Profile from './Profile';
+import Stat from './Stat';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
@@ -33,8 +35,10 @@ ReactDOM.
                 <Route exact path ="/comment" component ={Comment} />
                 <Route exact path ="/bookmark" component ={Bookmark} />
                 <Route exact path ="/story" component ={Story} />
-                <Route excat path ="/story_nav_draft" component={StoryNavDraft} />
-                <Route excat path ="/new_story" component={NewStory} />
+                <Route exact path ="/story_nav_draft" component={StoryNavDraft} />
+                <Route exact path ="/new_story" component={NewStory} />
+                <Route exact path ="/profile" component={Profile} />
+                <Route exact path ="/stat" component={Stat} />
             </Router>
         
 , document.getElementById('DropDownProfile'));
