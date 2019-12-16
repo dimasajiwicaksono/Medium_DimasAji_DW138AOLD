@@ -21,7 +21,7 @@ export default class Profile extends Component {
                         <span><Image src="https://miro.medium.com/fit/c/64/64/1*2bn998LOe7kbY41r0M5Row.jpeg" style={{width:"100%",height:"100%"}} roundedCircle/></span>
                     </div>
                 </div>
-                <h5> Dimas AJi Wicakasono hasn't been active on Medium yet. Chaeck back later to see their stories. claps and highlight</h5>
+                <h5> Dimas Aji Wicaksono hasn't been active on Medium yet. Check back later to see their stories. claps and highlight</h5>
             </Container>
             
         )
