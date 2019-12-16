@@ -18,6 +18,7 @@ import StoryNavDraft from './StoryNavDraft';
 import NewStory from './NewStory';
 import Profile from './Profile';
 import Stat from './Stat';
+import RelatedArticle from './RelatedArticle';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
@@ -39,6 +40,7 @@ ReactDOM.
                 <Route exact path ="/new_story" component={NewStory} />
                 <Route exact path ="/profile" component={Profile} />
                 <Route exact path ="/stat" component={Stat} />
+                <Route exact path ="/related_article" component={RelatedArticle} />
             </Router>
         
 , document.getElementById('DropDownProfile'));

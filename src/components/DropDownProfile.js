@@ -34,7 +34,7 @@ export default class DropDownProfile extends Component {
                     <Dropdown.Divider />
                     <Link to='/bookmark'style={{textDecoration:"none"}}> <Dropdown.Item as="button"> Bookmarks</Dropdown.Item></Link>
                     <Link to='./profile'><Dropdown.Item as="button"style={{textDecoration:"none"}}> Profile</Dropdown.Item></Link>
-                    <Link to='./stat'><Dropdown.Item as="button"style={{textDecoration:"none"}}>Setting</Dropdown.Item></Link>
+                    <Link to='./related_article'><Dropdown.Item as="button"style={{textDecoration:"none"}}>Setting</Dropdown.Item></Link>
                     <Link to='./stat'><Dropdown.Item as="button"style={{textDecoration:"none"}}>Help</Dropdown.Item></Link>
                     <Link to='/login'> <Dropdown.Item as="button"style={{textDecoration:"none"}}>Sign Out</Dropdown.Item></Link>
                 </div>
