@@ -3,12 +3,7 @@ import { Container, Card, Row, Col, Button, Figure } from 'react-bootstrap';
 import Header from './Header';
 import MainArticle from'./components/MainArticle';
 import CategoryArticle from './components/CategoryArticle';
-
-
-
-
-
-
+import axios from 'axios';
 
 const articleMain = [
     {
@@ -47,6 +42,25 @@ const articleMain = [
     {/*------------------------------------------ Header ----------------------------------------*/}
 
 export default class CategoryPage extends Component {
+
+    constructor () {
+        super ()
+        this.state = {
+            categoryArticle : []
+        }
+    }
+
+    componentDidMount () {
+        axios.get ( 'https://localhost:5000/api/v1/categories')
+        .then(res => {
+            this.setState ({
+                articlesCategory:res.data
+            })
+        })
+    }
+
+
+
     render() {
         return (
             <Container style={{ marginTop: "0px", paddingTop: "0px" }}>
@@ -55,8 +69,8 @@ export default class CategoryPage extends Component {
                     <div className="text">
                         <Row className="text2">
                             <Col lg={3} className="oneZero">
-                                <Figure.Image width={500} src="https://miro.medium.com/max/540/1*cw32fIqCbRWzwJaoQw6BUg.png" alt="OneZero"
-                                />
+                                {/* <Figure.Image width={500} src="https://miro.medium.com/max/540/1*cw32fIqCbRWzwJaoQw6BUg.png" alt="OneZero"
+                                /> */} <h1>OneZero</h1>
                             </Col>
                             <Col lg={6} className="textFront">
                                 <div className="textFront" style={{ fontSize: "25px" }} />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Form, Button} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import { Form, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 export default class FormData extends Component {
@@ -63,8 +63,9 @@ export default class FormData extends Component {
 
     render() {
         return (
-            <div className="container">
-                <Form onSubmit={this.onSubmit}>
+
+            <Form onSubmit={this.onSubmit} style={{marginLeft:180}}>
+                <div className="form-center">
                     <div className="form-group">
                         <label>Your Email</label>
                         <input type="email" className="form-control" value={this.state.email} onChange={this.onChangeEmail} />
@@ -73,11 +74,13 @@ export default class FormData extends Component {
                         <label>Your Password</label>
                         <input type="password" className="form-control" value={this.state.password} onChange={this.onChangeName} />
                     </div>
-                    <Button style={{marginLeft:"320px", color:"white"}} variant="dark" type="submit" className="btn-continue"><Link to ="/Home" style={{color:"white"}}>Continue</Link></Button>
-                    <br/><br/>
-                    <p style={{color:"green", textAlign:"center"}}> <b><a href="#">All sign in options</a></b> </p>
-                </Form>
-            </div>
+                    <div className="form-group">
+                        <Button style={{ color: "white" }} variant="dark" type="submit" className="btn-continue"><Link to="/Home" style={{ color: "white" }}>Continue</Link></Button>
+                    </div>
+                    <br /><br />
+                </div>
+            </Form>
+
         )
     }
 }

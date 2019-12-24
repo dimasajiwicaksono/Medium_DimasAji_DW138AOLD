@@ -8,7 +8,7 @@ export default class Follow extends Component {
     render () {
         return (
             <Container>
-                 <div className="btn" style={{marginLeft:120}}>
+                <div className="btn" style={{marginLeft:120}}>
                     <span><Button variant="light">Books </Button></span>
                     <span><Button variant="light">Self Improvement </Button></span>
                     <span><Button variant="light">Productivity </Button></span>

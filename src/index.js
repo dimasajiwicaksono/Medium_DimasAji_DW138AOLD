@@ -28,20 +28,20 @@ ReactDOM.
     render (
             <Router>
                 <Route exact path ="/home" component={Home} />
-                <Route exact path ="/login" component={Login} />
-                <Route exact path ="/category_page" component={CategoryPage} />
-                <Route exact path ="/register" component={App} />
-                <Route exact path ="/article_detail" component={ArticleDetail} />
-                <Route exact path ="/drop" component={DropDownProfile} /> 
-                <Route exact path ="/comment" component ={Comment} />
-                <Route exact path ="/bookmark" component ={Bookmark} />
-                <Route exact path ="/story" component ={Story} />
-                <Route exact path ="/story_nav_draft" component={StoryNavDraft} />
-                <Route exact path ="/new_story" component={NewStory} />
-                <Route exact path ="/profile" component={Profile} />
-                <Route exact path ="/stat" component={Stat} />
-                <Route exact path ="/related_article" component={RelatedArticle} />
+                <Route path ="/login" component={Login} />
+                <Route path ="/category_page" component={CategoryPage} />
+                <Route path ="/register" component={App} />
+                <Route path ="/article_detail" component={ArticleDetail} />
+                <Route path ="/drop" component={DropDownProfile} /> 
+                <Route path ="/comment" component ={Comment} />
+                <Route path ="/bookmark" component ={Bookmark} />
+                <Route path ="/story" component ={Story} />
+                <Route path ="/story_nav_draft" component={StoryNavDraft} />
+                <Route path ="/new_story" component={NewStory} />
+                <Route path ="/profile" component={Profile} />
+                <Route path ="/stat" component={Stat} />
+                <Route path ="/related_article" component={RelatedArticle} />
             </Router>
         
-, document.getElementById('DropDownProfile'));
+, document.getElementById('Home'));
 serviceWorker.unregister();

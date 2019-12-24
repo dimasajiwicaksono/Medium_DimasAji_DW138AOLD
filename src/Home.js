@@ -9,30 +9,31 @@ import MainArticle from './components/MainArticle';
 import PopularArticle from './components/PopularArticle';
 import Header from './Header';
 import Category from './Category';
+import axios from 'axios';
 
 
 
 const article = [
   {
     id: 1,
-    num:"01",
-    img :"https://miro.medium.com/max/504/1*DCC8VXUnCONv8i5G4b4V9g.jpeg", 
+    num: "01",
+    img: "https://miro.medium.com/max/504/1*DCC8VXUnCONv8i5G4b4V9g.jpeg",
     title: "Data Science is the sexiest job in 21st century",
-    author : "Robent Langdon in Towards Science ",
+    author: "Robent Langdon in Towards Science ",
     info: "Des 25, 2018. 6 min read"
   },
   {
     id: 2,
-    num:"02",
-    img :'https://miro.medium.com/max/738/0*xL1tenKdF7n2j7vV.jpeg ',
+    num: "02",
+    img: 'https://miro.medium.com/max/738/0*xL1tenKdF7n2j7vV.jpeg ',
     title: "Have you read documentation ReactJs?",
     author: "H.R Montefiore",
     info: "Feb 10, 2017. 6 min read"
   },
   {
     id: 3,
-    num:"03",
-    img : "https://miro.medium.com/max/739/1*lg9nkMo7qaE3PSTbpgbdlQ.png",
+    num: "03",
+    img: "https://miro.medium.com/max/739/1*lg9nkMo7qaE3PSTbpgbdlQ.png",
     title: "Tutorial: .Map (), .Filter(), and Reduce () ReactJS and ReactNative",
     author: "Muhammad Abdullah",
     info: "Nov 3 . 10 min read"
@@ -43,110 +44,62 @@ const article = [
 const articleBig = [
   {
     id: 6,
-    img :"https://miro.medium.com/max/490/1*wGhiyH4w0SNIeHBGGtmzsg.png",
+    img: "https://miro.medium.com/max/2000/1*-T8oo_JoKkMxfnPKLt_Ciw.jpeg",
     superTitle: "BASED ON YOUR READING HISTORY",
-    title: "Tutorial: how to deploy a production React app to Heroku",
-    subTitle:"Create-react-app and Heroku are great tools for building highly performant apps, .....",
-    author : "Jeremy Gothlifield ",
+    title: "If You Only Read A Few Books in 2018, Read These",
+    subTitle: "If you’d liked to be jerked around less, provoked less, and more productive and inwardly focused,where should you start?",
+    author: "Jeremy Gothlifield ",
     info: "Des 10. 6 min read",
-    url:'https://medium.com/jeremy-gottfrieds-tech-blog/tutorial-how-to-deploy-a-production-react-app-to-heroku-c4831dfcfa08'
+    url: '/article_detail'
   }
 ]
 
 
-const articleMain = [
-  {
-    img :'https://miro.medium.com/max/2000/1*-T8oo_JoKkMxfnPKLt_Ciw.jpeg',
-    id: 1,
-    superTitle: "BASED ON YOUR READING HISTORY",
-    title: "If You Only Read A Few Books in 2018, Read These",
-    subTitle:"If you’d liked to be jerked around less,provoked less, and more productive and inwardly focused,",
-    author : "Marcellio in Towards Science ",
-    info: "Des 10. 6 min read",
-    url :"/article_detail"
-  },
-  {
-    id: 2,
-    img : 'https://miro.medium.com/max/738/0*xL1tenKdF7n2j7vV.jpeg ',
-    superTitle: "ARTIFICIAL INTELLEGENCE",
-    title: "K-means Clustering Python Example",
-    subTitle:"We’re drowning in data. Everyday, 2.5 quintillion bytes of data are created.",
-    author : "Cork Marlin in Towards Sciecne",
-    info: "Des 10, 2019. 6 min read"
-  },
-  {
-    id: 3,
-    img : "https://miro.medium.com/max/739/1*lg9nkMo7qaE3PSTbpgbdlQ.png" ,
-    superTitle: "POPULAR IN MEDIUM",
-    title: "Startup CEO salaries",
-    subTitle:"We’ve seen a wide range of CEO salaries in our portfolio, from as low as $35k annually to as much as $325k (plus bonus)",
-    author : "Sammy Abdullah ",
-    info: "Mar 23. 4 min read"
-  },
-  {
-    id: 4,
-    img :"https://miro.medium.com/max/504/1*DCC8VXUnCONv8i5G4b4V9g.jpeg",
-    superTitle: "DATA SCIENCE",
-    title: "Isotonic Regression is THE Coolest Machine-Learning Model You Might Not Have Heard Of",
-    subTitle:"Machine Learning with isotonic Regression you should try to develop.",
-    author : "Emment Bourdeu ",
-    info: "Jan 12. 3 min read"
-  },
-  {
-    id: 5,
-    img : "https://miro.medium.com/max/1920/1*GyYjPtuJ6BgIg7UJ5Y8yig.jpeg",
-    superTitle: "BASED ON YOUR READING HISTORY",
-    title: "4 Ways Introverts Can Start a Conversation with a Stranger",
-    subTitle:"Starting conversations with people I have never met is like my superpower.",
-    author : "Dan Brown in DailySosial",
-    info: "Nov 23, 2018. 6 min read"
-  },
-  {
-    id: 6,
-    img :"https://miro.medium.com/max/490/1*wGhiyH4w0SNIeHBGGtmzsg.png",
-    superTitle: "BASED ON YOUR READING HISTORY",
-    title: "Tutorial: how to deploy a production React app to Heroku",
-    subTitle:"Create-react-app and Heroku are great tools for building highly performant apps, .....",
-    author : "Jeremy Gothlifield ",
-    info: "Des 10. 6 min read"
-  },
-  
-]
-
-
-
-
-
-// const categoryMenus = [
-//   {id: 1, name : "HOME" }, 
-//   {id: 2, name : "ONEZERO"}, 
-//   {id: 3, name : "ELEMENTAL"},
-//   {id: 4, name : " GEN"},
-//   {id: 5, name : " ZORA"},
-//   {id: 6, name : " FORGE"},
-//   {id: 7, name : " HUMAN PARTS"},
-//   {id: 8, name : " LEVER"},
-//   {id: 9, name : " HEATED"},
-//   {id: 10, name : " MODUS"}
-// ]
-
-
-
 class Home extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      articles: [],
+      articlePopular:[],
+    };
+  }
+
+
+
+
+  componentDidMount() {
+    axios.get('http://localhost:5000/api/v1/articles')
+      .then(res => {
+        const articles = res.data;
+        this.setState({ articles });
+        console.log(articles)
+      })
+      
+      axios.get('http://localhost:5000/api/v1/article_popular')
+      .then(res => {
+        const articlePopular = res.data;
+        this.setState({ articlePopular });
+        console.log(articlePopular)
+      })
+    
+  }
+
+
   render() {
+
+// inisiasi number for popular 
+let number =  1;
+
     return (
       <React.Fragment>
-        <Container style={{ paddingTop: "0px", marginTop:"0px" }}>
-            <Navbar>
-              <Header />
-            </Navbar>
-            <Col sticky="Top" style={{paddingTop:0}}>
-            {/* <Navbar bg="light" variant="dark"> */}
-              {/* {categoryMenus.map (item => */}
-                <Category />
-                  {/* // name= {item.name} /> )} */}
-            {/* </Navbar> */}
-            </Col>
+        <Container style={{ paddingTop: "0px", marginTop: "0px" }}>
+          <Navbar>
+            <Header />
+          </Navbar>
+          <Col sticky="Top" style={{ paddingTop: 0 }}>
+            <Category />
+          </Col>
         </Container>
 
 
@@ -197,12 +150,12 @@ class Home extends Component {
                 </Col>
               </Row>
               <Col className="popularArticle">
-                {article.map(item =>
+                {this.state.articlePopular.map(item =>
                   <PopularArticle
-                    num={item.num}
+                    num={number++}
                     title={item.title}
-                    author={item.author}
-                    info={item.info} />
+                    author={item.userId.fullname}
+                    info={item.createdAt} />
                 )}
               </Col>
 
@@ -220,22 +173,22 @@ class Home extends Component {
 
             {/*-----------------------------  Main Article --------------------------*/}
             <Col className="mainArticle">
-              {articleMain.map(item =>
+              {this.state.articles.map(item =>
                 <MainArticle
-                  urlLink = {item.img}
+                  urlLink={item.image}
                   superTitle={item.superTitle}
                   title={item.title}
-                  subTitle={item.subTitle}
-                  author={item.author}
-                  info={item.info}
-                  url={item.url}/>
+                  subTitle={item.content}
+                  author={item.userId.fullname}
+                  infoDate={item.createdAt}
+                  url={item.url} />
               )}
+          
             </Col>
           </Row>
         </Container>
-    </React.Fragment>
+      </React.Fragment>
     );
   }
 }
-
 export default Home;

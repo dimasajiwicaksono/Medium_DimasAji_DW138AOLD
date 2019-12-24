@@ -9,8 +9,8 @@ export default class CategoryArticle extends Component {
                     <Col style={{paddingRight:"0px"}}>
                     <Card className="bg-light text-dark" style={{paddingRight:"0px"}}>
                             <Card.Img src={this.props.urlLink} alt="Card image" style={{ width: "800px",
-                                                                                         height: "300px", 
-                                                                                  objectFit: "Cover" }} />
+                                                                                        height: "300px", 
+                                                                    objectFit: "Cover" }} />
                             </Card>
                     </Col>
 

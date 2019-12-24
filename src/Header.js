@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Nav, Navbar, Button, Image} from 'react-bootstrap';
-import { ReactComponent as Icon} from './magnifying-glass.svg';
+import {Container, Nav, Navbar, Dropdown, Button, Image, MenuItem} from 'react-bootstrap';
 import NotificationsNoneOutlinedIcon from '@material-ui/icons/NotificationsNoneOutlined';
 import './App.css';
 import Drop from './components/DropDownProfile';
@@ -28,20 +27,12 @@ export default class Header extends Component {
                                 </h1>
                             </Navbar.Brand>
                         </Navbar>
-                        <Drop />
+                        
                         < Navbar clasName="icon" className="icon" inline>
-                            <div className="icon-search">
-                                <span><Icon style={{width:"50%",height:"50%", }} /></span>
-                            </div>
-                            <div className="icon-shaped">
-                                <span><NotificationsNoneOutlinedIcon style={{marginRight:"20px"}}></NotificationsNoneOutlinedIcon> </span>
-                            </div>
                             <div className="Button">
-                                <span> <Button variant="outline-dark" type="submit"style={{marginRight:"20px"}}> Upgrade</Button></span>
+                                <span> <Button variant="outline-dark" type="submit"style={{marginRight:"20px"}}>Upgrade</Button></span>
                             </div>
-                            <div className="icon-avaratar">
-                                <span><Image src="https://miro.medium.com/fit/c/64/64/1*2bn998LOe7kbY41r0M5Row.jpeg" style={{width:"60%",height:"60%"}} roundedCircle/></span>
-                            </div>
+                            <Drop />
                         </Navbar>
                 </Navbar>
                 </Container>
